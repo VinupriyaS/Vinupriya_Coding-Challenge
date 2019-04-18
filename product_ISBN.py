@@ -10,6 +10,8 @@ def getISBN(productID):
  
     #find next closest multiple of 11 and subtract sum from this to get errorbit
     errorbit=(11*(math.ceil(sum/11)) - sum)%11
+    
+    #add errorbit to end of ISBN
     if(errorbit == 10):
         ISBN=ISBN+"X"
     else:
