@@ -20,7 +20,7 @@ def getISBN(productID):
 
 
 while True:
-    productID=input("Enter productID")
+    productID=input("Enter productID ")
     if len(productID) !=12 or productID[:3]!="978":
       print("Invalid ID")
     else:
@@ -28,5 +28,3 @@ while True:
      
 print(productID)
 getISBN(productID)
-
-
